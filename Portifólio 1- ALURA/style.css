@@ -58,19 +58,27 @@ body{
 
 .apresentacao__link{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .apresentacao__link__a{
-    background-color: #22D4FD;
-    color: black;
+    color: #F6F6F6;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    width: 255px;
+    width: 300px;
     padding: 16px;
-    border-radius: 7px;
+    border: 2px solid #22D4FD;
+    border-radius: 8px;
+}
+
+.apresentacao__link__subtitle{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
