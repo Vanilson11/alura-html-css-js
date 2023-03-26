@@ -8,8 +8,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
 body{
-    background-color: black;
+    background-color: var(--cor-primaria);
     color: white
 }
 
@@ -23,11 +32,11 @@ body{
 }
 
 .cabecalho__menu__links{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 18px;
     text-decoration: none;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao > img{
@@ -58,19 +67,20 @@ body{
 }
 
 .apresentacao__conteudo__title{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-principal);
     font-size: 30px;
+    color: var(--cor-secundaria);
 }
 
 .destaque_titulo{
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__texto{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 16px;
     text-align: justify;
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
 }
 
 .apresentacao__link{
@@ -86,15 +96,15 @@ body{
     justify-content: center;
     gap: 10px;
     align-items: center;
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
     font-weight: 600;
     width: 280px;
     padding: 16px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
 }
 
@@ -103,15 +113,15 @@ body{
 }
 
 .apresentacao__link__subtitle{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-principal);
     font-weight: 400;
     font-size: 18px;
 }
 
 .rodape{
-    color: black;
-    background-color: #22D4FD;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-family: var(--font-secundaria);
     font-size: 18px;
     font-weight: 400;
     text-align: center;
