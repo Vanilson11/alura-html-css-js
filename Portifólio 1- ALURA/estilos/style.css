@@ -76,6 +76,17 @@ body{
     color: var(--cor-terciaria);
 }
 
+.conteudo__lista__items{
+    font-family: var(--font-secundaria);
+    text-align: justify;
+    line-height: 23px;
+    font-size: 16px;
+}
+
+.destaque__lista{
+    color: var(--cor-terciaria);
+}
+
 .apresentacao__conteudo__texto{
     font-family: var(--font-secundaria);
     font-size: 16px;
@@ -126,4 +137,11 @@ body{
     font-weight: 400;
     text-align: center;
     padding: 20px;
+}
+
+.rodape__link{
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    color: black;
 }
