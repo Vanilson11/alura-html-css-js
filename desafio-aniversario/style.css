@@ -8,14 +8,14 @@
 }
 
 :root{
-    --cor-primaria: #95BDFF;
+    --cor-primaria: #FD8A8A;
+    --cor-body: #F8EDE3;
 
     --font-primaria: 'Montserrat', sans-serif;
 }
 
 body{
-    height: 100vh;
-    background-color: aliceblue;
+    background-color: var(--cor-body);
 }
 
 .cabecalho{
@@ -40,16 +40,103 @@ body{
 
 .apresentacao{
     display: flex;
+    box-sizing: border-box;
 }
 
 .apresentacao__conteudo{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 7% 10%;
+    gap: 45px;
+    padding: 7% 6%;
 }
 
 .apresentacao__conteudo__msg{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.apresentacao__conteudo__title0{
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+    text-align: justify;
+    width: 400px;
+}
+
+.apresentacao__conteudo__foto0{
+    width: 470px;
+    height: 250px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+}
+
+.apresentacao__conteudo__carta{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.apresentacao__conteudo__title1{
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+}
+
+.apresentacao__conteudo__txt{
+    font-family: var(--font-primaria);
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.apresentacao__conteudo__title1{
+    text-align: center;
+}
+
+.conteudo__galeria__fotos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+    padding-top: 6%;
+}
+
+.galeria__fotos{
+    width: 339px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+}
+
+.galeria__fotos:hover{
+    transform: translateY(-10px);
+    transition: .3s;
+    transition-timing-function: ease;
+}
+
+.rodape{
+    background-color: var(--cor-primaria);
+    color: var(--cor-body);
+    padding: 2%;
+    line-height: 25px;
+}
+
+.rodape__txt{
+    font-family: var(--font-primaria);
+    font-weight: 500;
+    color: var(--cor-body);
+    text-align: center;
+}
+
+.rodape__link{
+    color: var(--cor-body);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.rodape__link:hover{
+    color: black;
+    text-decoration: underline;
 }
